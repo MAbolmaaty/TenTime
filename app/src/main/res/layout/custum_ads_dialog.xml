@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/transparentsub"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:id="@+id/ivpopads"
+            android:contentDescription="@string/app_name"
+          />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/btremoveads"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/curvedorange_button"
+                android:text="@string/removeads"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/btclose"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/btremoveads"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonshape"
+                android:text="@string/close"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

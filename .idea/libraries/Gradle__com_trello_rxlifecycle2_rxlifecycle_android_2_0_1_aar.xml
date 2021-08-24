@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.trello.rxlifecycle2:rxlifecycle-android:2.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/97450ecea34fa09c0f424a4226534040/transformed/rxlifecycle-android-2.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/4fa68722378fa1a874e279c5727bf3db/transformed/rxlifecycle-android-2.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/819a3d6a034b8585258a1b7b2c1fabcf/transformed/rxlifecycle-android-2.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/819a3d6a034b8585258a1b7b2c1fabcf/transformed/rxlifecycle-android-2.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/819a3d6a034b8585258a1b7b2c1fabcf/transformed/rxlifecycle-android-2.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.trello.rxlifecycle2/rxlifecycle-android/2.0.1/54ce4d0c28f0c71cfe9f8456a9eb476d46482dcb/rxlifecycle-android-2.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.trello.rxlifecycle2/rxlifecycle-android/2.0.1/accc16134de1dcbe29cbd5e208924a0b9618d2b6/rxlifecycle-android-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

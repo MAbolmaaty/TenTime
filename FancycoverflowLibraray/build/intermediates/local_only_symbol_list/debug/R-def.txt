@@ -1,0 +1,11 @@
+R_DEF: Internal format may change without notice
+local
+attr? actionDistance
+attr? maxRotation
+attr? scaleDownGravity
+attr? unselectedAlpha
+attr? unselectedSaturation
+attr? unselectedScale
+id auto
+string app_name
+styleable FancyCoverFlow unselectedAlpha unselectedSaturation unselectedScale maxRotation scaleDownGravity actionDistance

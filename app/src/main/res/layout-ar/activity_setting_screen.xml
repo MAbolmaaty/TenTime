@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progressbarwhell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logout_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:visibility="gone"
+
+      />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"
+        android:background="@color/darkgray"
+        android:orientation="horizontal"
+        android:weightSum=".1">
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:weightSum="1">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/English"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.5"
+                android:background="@mipmap/englishnotactive"
+                android:text="@string/english"
+
+                android:textColor="@color/white" />
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/Englishactive"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.5"
+                android:background="@mipmap/englishactive"
+                android:text="@string/english"
+
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/arabic"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.5"
+                android:background="@mipmap/arabicnotactive"
+                android:text="@string/arabic"
+                android:textColor="@color/white" />
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/arabicactive"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="0.5"
+                android:background="@mipmap/arabicactive"
+                android:text="@string/arabic"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:weightSum="1">
+            <com.binarywaves.ghaneely.ghannelystyles.CustomtextList
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="12dp"
+                android:layout_marginEnd="12dp"
+                android:gravity="right"
+                android:text="@string/language"
+                android:textColor="@color/white"
+                android:textSize="@dimen/albumtextsize"
+                android:layout_weight="0.96" />
+            <ImageView
+                android:layout_width="@dimen/settingicon_height"
+                android:layout_height="@dimen/settingicon_height"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="@string/language"
+                android:src="@mipmap/languageicon" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/changepass_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="right"
+        android:weightSum="1"
+        android:background="@color/darkgray">
+        <com.binarywaves.ghaneely.ghannelystyles.CustomtextList
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="right"
+            android:layout_weight="0.96"
+            android:text="@string/changepass"
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize" />
+        <ImageView
+            android:layout_width="@dimen/settingicon_height"
+            android:layout_height="@dimen/settingicon_height"
+            android:layout_gravity="center_vertical|right"
+
+            android:contentDescription="@string/language"
+            android:src="@mipmap/passwordicon" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/upload_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="right"
+        android:weightSum="1"
+        android:background="@color/darkgray">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomtextList
+            android:id="@+id/upload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="right"
+            android:text="@string/changepic"
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize"
+            android:layout_weight="0.96"/>
+        <ImageView
+            android:layout_width="@dimen/settingicon_height"
+            android:layout_height="@dimen/settingicon_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/language"
+            android:src="@mipmap/changepicicon" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="0.1"
+        android:layout_gravity="right"
+        android:weightSum="1"
+        android:background="@color/darkgray">
+        <com.binarywaves.ghaneely.ghannelystyles.CustomtextList
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp"
+            android:gravity="right"
+            android:text="@string/logout"
+            android:textColor="@color/white"
+            android:layout_weight="0.96"
+            android:textSize="@dimen/albumtextsize" />
+        <ImageView
+            android:layout_width="@dimen/settingicon_height"
+            android:layout_height="@dimen/settingicon_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:contentDescription="@string/language"
+            android:src="@mipmap/logouticon" />
+
+
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/subscripe_layout"
+        layout="@layout/menufooter"
+
+        />
+
+
+</LinearLayout>

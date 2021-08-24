@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/rlcontainer"
+
+    android:paddingBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            tools:ignore="UselessParent">
+
+            <com.binarywaves.ghaneely.ghannelyadaptors.SquareImageView
+                android:id="@+id/item_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/ic_launcher" />
+
+            <ImageView
+                android:id="@+id/ivvideoicon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/microfonicon" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/image_layout"
+
+        android:background="@color/darkgray">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/tvsingername"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="marquee"
+            android:gravity="center"
+
+            android:paddingLeft="3dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:paddingStart="3dp"
+            tools:ignore="RtlSymmetry" />
+
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/tvsongname"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_below="@+id/tvsingername"
+            android:ellipsize="marquee"
+android:gravity="center"
+            android:paddingLeft="3dp"
+            android:textColor="@color/graytext_color"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:paddingStart="3dp" />
+    </RelativeLayout>
+</RelativeLayout>

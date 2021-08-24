@@ -1,0 +1,323 @@
+<resources>
+
+    <string name="APP_ID">504168436432697</string>
+    <string name="app_name">غنيلي</string>
+    <string name="splash_name">غنيلي</string>
+    <string name="day">يوم</string>
+    <string name="month">شهر</string>
+    <string name="back">رجوع</string>
+    <string name="gnrl_internet_error">الرجاء التحقق من اتصال الإنترنت الخاص بك !</string>
+    <string name="checkcode">الرجاء إدخال رمز تشغيل الصحيح ..</string>
+    <string name="entercode">الرجاء إدخال رمز التفعيل</string>
+    <string name="likes">اعجاب</string>
+    <string name="playlist">قوائم الاغاني</string>
+    <string name="song">اغنيه</string>
+
+    <string name="passwordhintreg"> اختر كلمه السر</string>
+    <string name="passwordhintlogin"> ادخل كلمه السر</string>
+
+    <string name="send">ارسال ايميل</string>
+    <string name="mobile_hint">رقم الهاتف</string>
+    <string name="Register">تسجيل</string>
+    <string name="EmptyField">يرجى تعبئة جميع البيانات المطلوبة</string>
+    <string name="notvalid_formate">الرجاء التحقق من رقم الهاتف الخاص بك</string>
+    <string name="userlesszero">حاول مرة اخرى ..</string>
+    <string name="cretaeplaylist">إنشاء قائمة اغاني</string>
+    <string name="resendcode"><u> اعاده ارسال كود التفعيل</u></string>
+    <string name="loginpopup">الرجاء التأكد مما ادخلته, اضغط تسجيل مره اخري او اضغط رجوع لادخال البيانات الصحيحه..</string>
+        <string name="popnumber"> انا من عملاء اورانج</string>
+    
+    <!-- Alert dialouge -->
+    <string name="no_sim">عفوا لا يوجد بطاقه</string>
+    <string name="Activation_title">كود التفعيل</string>
+    <string name="no_search_result">لا يوجد نتيجة</string>
+    <string name="search_result">نتيجة البحث</string>
+    <string name="playlist_title">اغاني جديدة</string>
+    <string name="Top_songs">افضل 20</string>
+    <string name="Editor_title">بس عشانك</string>
+    <string name="Friend_title">اغانى نجمك المفضل</string>
+    <string name="video_title">فيديو كليب</string>
+
+    <string name="inter_title">الراديو</string>
+    <string name="personal_dj">على مزاجك </string>
+    <string name="underground">الفرق الناشئه</string>
+    <string name="album_title">احدث الالبومات</string>
+    <string name="follow">  \u0020\u0020 \u0020 متابع \u0020\u0020 \u0020 </string>
+    <string name="unfollow">  \u0020\u0020 \u0020غير متابع \u0020\u0020 \u0020 </string>
+
+    <string name="create_playlist">\u0020\u0020 \u0020إنشاء قائمة للاغاني\u0020\u0020 \u0020</string>
+    <string name="material_icon_undo"></string>
+    <string name="thnxmessage">شكرا لانتظارك </string>
+    <string name="languagemessage"> هل تريد تغيير اللغه ؟</string>
+    <string name="karaokesave"> هل تريد حفظ التسجيل ؟</string>
+
+    <string name="login">دخول </string>
+    <string name="mobileerror">عفوا، هذه الخدمة متاحة لعملاء اورانج فقط…</string>
+    <string name="recenltlyplayed">استماعاتك الاخيرة</string>
+    <string name="features">مقترحات</string>
+
+    <string-array name="nav_drawer_items">
+        <item>الصفحة الرئيسية</item>
+        <item>بحث</item>
+        <item>اعجابات</item>
+        <item>قائمة الاغاني</item>
+        <item>الرسائل</item>
+        <item>الأصدقاء</item>
+        <item>الراديو</item>
+        <item>كاريوكي</item>
+        <item>التنزيلات </item>
+
+        <item>الاعدادات</item>
+
+
+        <item>غنيلي الاضافي</item>
+        <item>الهدايا</item>
+        <item>المساعدة</item>
+        <item>الحساب الخاص بك مجاني</item>
+    </string-array>
+    <string-array name="player_list">
+        <item>اعجبنى</item>
+        <item>اضف الى قائمة الاغانى </item>
+        <item>تحميل كول تون</item>
+        <item>كلمات الاغنيه</item>
+
+        <item>تنزيل</item>
+        <item>مشاركه</item>
+        <item>راديو</item>
+        <item>الذهاب الى الفنان </item>
+        <item>الذهاب إلى الألبوم</item>
+    </string-array>
+    <string-array name="player_listunlike">
+        <item>غير معجب</item>
+        <item>اضف الى قائمة الاغانى </item>
+        <item>تحميل كول تون</item>
+        <item>كلمات الاغنيه</item>
+
+        <item>تنزيل</item>
+        <item>مشاركه</item>
+        <item>راديو</item>
+        <item>الذهاب الى الفنان </item>
+        <item>الذهاب إلى الألبوم</item>
+    </string-array>
+
+    <!-- Video List -->
+
+    <string-array name="video_list">
+        <item>اعجبنى</item>
+          <item>تنزيل</item>
+        <item>مشاركه</item>
+        <item>راديو</item>
+        <item>الذهاب الى الفنان </item>
+    </string-array>
+    <string-array name="video_listunlike">
+        <item>غير معجب</item>
+        <item>تنزيل</item>
+        <item>مشاركه</item>
+        <item>راديو</item>
+        <item>الذهاب الى الفنان </item>
+    </string-array>
+
+
+    <string-array name="menupopup">
+        <item>عربي</item>
+        <item>غربي</item>
+        <item> عربي و غربي </item>
+
+
+    </string-array>
+    <!-- plus in top songs -->
+
+    <string name="arabicmenu">عربي</string>
+    <string name="intment">غربي</string>
+    <string name="arandint"> عربي و غربي </string>
+
+    <!-- audioplayer -->
+    <string name="pause">وقف</string>
+    <string name="play">تشغيل</string>
+
+    <color name="white">#ffffff</color>
+
+    <dimen name="small_button_width">30dp</dimen>
+    <!-- Setting -->
+    <string name="language">اللغة</string>
+    <string name="changepass">تغيير كلمة السر</string>
+    <string name="enteroladpass"> كلمة السر القديمة الخاصة بك </string>
+    <string name="enternewpass"> كلمة السر الجديدة</string>
+    <string name="confirmpass">تأكيد كلمة السر الجديدة</string>
+    <string name="cancel">إلغاء</string>
+    <string name="logout">تسجيل خروج</string>
+        <string name="about">عن غنيلي </string>
+    
+    <string name="changepic">إضافة صورة</string>
+    <!-- Albumscreen -->
+    <string name="otheralbum">ألبومات أخرى</string>
+    <string name="similaralbum">ألبومات مشابهة</string>
+    <!-- artistscreen -->
+    <string name="album">ألبومات</string>
+    <string name="singke">سينجل</string>
+    <string name="similarart">فنانين مشابهين</string>
+    <!-- searchlayout -->
+    <string name="fontello_search"></string>
+    <string name="playshuffle">تشغيل عشوائي</string>
+
+    <!--
+ push notification 
+ 
+
+
+    -->
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="facebooklayout">  شارك موسيقتك المفضله مع اصدقائك </string>
+    <string name="connect">  اتصل بفيس بوك </string>
+    <string name="playlistname">اسم قائمه الاغاني</string>
+    <string name="saveplaylist">حفظ</string>
+    <string name="removefromplaylist">اسحب مره اخري لتاكيد الحذف</string>
+    <string name="logoutdialog">هل تريد الخروج من تطبيق غنيلي؟</string>
+    <string name="pleaseregister">برجاء تسجيل الدخول اولا </string>
+    <string name="invalidpassword">…برجاء ادخال كلمه المرور الصحيحة</string>
+    <string name="addfriend">اضف صديق</string>
+    <string name="friendstitle">اصدقائك على الفيس بوك المستخدمين غنيلى 
+</string>
+    <string name="maxcharacter">من فضلك قم بادخال 2 حروف علي الاقل لاتمام عمليه البحث</string>
+    <string name="waitmessage">برجاء الانتظار 30-دقيقه لاعاده المحاوله</string>
+    <string name="follower">متابع</string>
+    <string name="calltonenotavailable"> عفوا الكول تون غير متاح حاليا لهذه الاغنيه.</string>
+    <string name="getghannelypremuim">اشترك في غنيلي اكسترا</string>
+    <string name="unsubghannelypremuim">الغاء الاشتراك في غنيلي اكسترا</string>
+
+    <string name="tracks"> الاغاني</string>
+    <string name="notpicfound">لم يتم اختيار صوره</string>
+    <string name="password_notmatch">الرجاء التاكد من كلمه السر</string>
+    <string name="requiredfields">من فضلك قم بادخال جميع الحقول ,التاكد من ادخال كلمه المرور المشابهه</string>
+    <string name="passwordchanged">"  تم التعديل الرقم السري بنجاح"</string>
+    <string name="checkdata">الرجاء التاكد من البيانات المدخله</string>
+
+    <string name="autoplaylist">قائمه الاغاني المختاره</string>
+    <string name="songadded">" تم الاضافه بنجاح"</string>
+    <string name="like">اعجبنى</string>
+
+    <string name="unlike">غير معجب</string>
+    <string name="resendcodetext"><![CDATA[<u>اعد ارسال كود التفعيل</u>]]></string>
+
+    <string name="recentsearch">بحثك الاخير</string>
+
+    <string name="allsearch">الكل</string>
+
+    <string name="tracksearch">الاغاني</string>
+
+    <string name="playlistsearch">قائمه الاغاني</string>
+
+    <string name="artistsearch">الفنانين</string>
+    <string name="albumsearch">الالبومات</string>
+    <string name="video_search">فيديوهات</string>
+
+    <string name="typehere">البحث عن</string>
+    <string name="upload">تحميل</string>
+    <string name="Uploadsuccess">تم تعديل الصوره</string>
+    <string name="selectpic">من فضلك قم باختيار الصوره اولا .. واعد التحميل</string>
+
+    <string name="nofriendsfound">لا احد من اصدقائك لديه تطبيق غنيلي. اضغط هنا و ادعوهم للمشاركة</string>
+    <string name="follwartist">الفنانين المتابعون</string>
+    <string name="norecentdata">لايوجد استماعات اخيره لدي صديقك</string>
+    <string name="nothavelyrics">لايوجد كلمات لهذه الاغنيه</string>
+    <string name="tryagain">جرب في وقت لاحق</string>
+    <string name="nocredit">لايوجد رصيد كافي</string>
+    <string name="no_playlist">ليس لديك قوائم اغاني.</string>
+
+    <string name="permuimtext">استمتع بتحميل الأغاني المفضلة لديك من خلال غنيلي اكسترا</string>
+    <string name="monthly">شهري </string>
+    <string name="daily">يومي</string>
+    <string name="egp">جنيه</string>
+    <string name="getitnow">اشترك الان</string>
+
+    <string name="viewmore">المزيد</string>
+
+    <string name="viewless">الاقل</string>
+    <string name="notrackselected">من فضلك قم باختيار اغنيه لاضافه قائمه الاغاني</string>
+
+    <string name="submon_text">اشتراك لمده شهر واحد فقط</string>
+
+    <string name="subday_text">اشتراك لمده يوم واحد فقط</string>
+
+    <string name="getit">اشترك</string>
+
+
+    <string name="calltonehint">خلي صحابك يسمعوا اغانيك المفضلة لما يتصلوا بيك اضغط هنا و خلي الاغنيه دي كول تونك </string>
+
+      <string name="calltune_charge">  خلي صحابك يسمعوا اغانيك المفضلة لما يتصلوا بيك    \n اضغط نعم و خلي الاغنيه دي كول تونك
+ب 5 جنيه فقط        </string>
+    <string name="nolike">لايوجد لديك اعجابات</string>
+
+    <string name="karaokehint">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020اضغط هنا للتسجيل \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020</string>
+
+    <string name="enterplaylist_name">من فضلك ادخل اسم قائمه الاغاني المراد حفظها</string>
+    <string name="removeads">ايقاف الاعلانات</string>
+    <string name="close">اغلاق</string>
+
+    <string name="nodata">لا يوجد بيانات</string>
+    <string name="subscripetxt">اشترك</string>
+    <string name="ghannely_features">اشترك في غنيلي اكسترا واستمتع باغاني بلا حدود</string>
+
+    <!-- ghannely feature strings -->
+
+    <string name="download">تحميل الاغاني</string>
+    <string name="karoke">كاريوكي</string>
+    <string name="prerelease">اغاني غربيه</string>
+    <string name="noads">بدون فواصل</string>
+    <string name="datafree">بدون انترنت</string>
+
+    <string name="nosearch">ابحث عن اغاني ,فنانين او قوائم الاغاني</string>
+    <string name="save">حفظ</string>
+    <string name="playlistartist">منوعات</string>
+
+    <string name="swipeinbox">مررها من اليسار للحذف او اداره الاشعار</string>
+
+    <string name="gotit">ادركت</string>
+    <string name="uploading">جاري تحميل الصوره</string>
+    <string name="songs">الاغانى</string>
+    <string name="saved_Songs">الاغانى المحفوظة</string>
+    <string name="name_record">اسم التسجيل</string>
+
+    <string name="Caraoke">كاريوكى</string>
+
+
+    <string name="noExtStorageAvailable">لايوجد مساحه كافيه</string>
+    <string name="recordingError">خطا ف التسجيل</string>
+    <string name="saveRecordError">خطا في حفظ التسجيل</string>
+    <string name="saveRecordsuccess">تم حفظ التسجيل بنجاح</string>
+    <string name="enjoyfeature">واستمتع بالعديد من المميزات .</string>
+    <string name="dimmedtext">اشترك في غنيلي اكسترا واستمع الي هذه الاغنيه واكثر   </string>
+    <string name="sucess">تمت بنجاح !</string>
+    <string name="reject">خطأ !</string>
+    <string name="retry">اعاده المحاوله</string>
+    <string name="offlinemsg">انت غير متصل من فضلك تاكد من الاتصال .</string>
+    <string name="offlinemsgtosyn">انت غير متصل من فضلك تاكد من الاتصال لتزامن حسابك .</string>
+    <string name="noinboxfound">لا يوجد رسائل</string>
+
+    <string name="nomesage">لا يوجد رسائل</string>
+    <string name="ghannelydownload">تنزيلات غنيلي</string>
+    <string name="filenotfound">عفوا الملف غير موجود</string>
+    <string name="generalerror">خطا .. حاول مره اخري</string>
+    <string name="downloadsuccess">تم تحميل الاغنيه بنجاج</string>
+    <string name="deletedownload">هل تريد حذف هذه الاغنيه ؟</string>
+    <string name="downloadvideosuccess">تم تحميل الفيديو بنجاح</string>
+
+    <string name="sucesssubscribe">تم الاشتراك في غنيلي اكسترا بنجاح</string>
+    <string name="unsucesssubscribe">تم الغاء الاشتراك في غنيلي اكسترا</string>
+    <string name="uusubconfirm">هل تريد الغاء الاشتراك في غنيلي اكسترا؟</string>
+    <string name="alreadydownloaded">هذه الاغنيه محمله بالفعل</string>
+    <string name="done">تم</string>
+    <string name="ghannelydownloadtrack">الاغاني المحمله</string>
+    <string name="ghannelydownloadvideo">الفيديوهات المحمله</string>
+    <string name="expiresubscribe">تاكد من اتصالك بالانترنت لتفعيل اشتركك بغنيلي اكسترا</string>
+    <string name="dimmedfulltrack">الاغنيه كامله</string>
+    <string name="fullvideodimmed">لفيديو كامل</string>
+    <string name="lyricserror">خطا ف التحميل .حاول لاحقا</string>
+    <string name="forget_password">نسيت كلمه المرور!</string>
+    <string name="sendactivate">ارسل كود التفعيل</string>
+    <string name="submit">ارسل</string>
+    <string name="search">ابحث</string>
+    <string name="gracetext" translatable="false">برجاء تجديد الاشتراك للاستمتاع بغنيلي اكسترا</string>
+
+</resources>

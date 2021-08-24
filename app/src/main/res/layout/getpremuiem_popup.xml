@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@mipmap/splash"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_header_relative"
+        android:layout_width="fill_parent"
+        android:layout_gravity="top"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/close_player"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:scaleType="center"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/closefinal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="@string/permuimtext"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="left|start"
+            android:id="@+id/linmon"
+            android:layout_margin="5dp"
+
+
+          >
+    <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/monthly"
+        android:background="@color/ghaneely_orange"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+
+        android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/rlcontainer"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                >
+                <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                    android:id="@+id/tvegp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/egp"
+                    android:textColor="@color/ghaneely_orange"
+                    android:layout_margin="5dp"
+                    android:textSize="18sp"/>
+
+                <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tvegp"
+                    android:layout_toEndOf="@id/tvegp"
+                    android:layout_margin="8dp"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:id="@+id/tvpricemonthly"
+                   />
+    </RelativeLayout>
+                <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rlcontainer"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:text="@string/submon_text"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/getit"
+                android:background="@color/ghaneely_orange"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:id="@+id/btmonthly"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="right|end"
+            android:id="@+id/lindaily"
+            android:layout_margin="5dp"
+            >
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/daily"
+                android:background="@color/ghaneely_orange"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"/>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:background="@color/white"
+
+                >
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:id="@+id/rldcontainer"
+                    android:layout_marginTop="10dp"
+
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    >
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                        android:id="@+id/tvdegp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/egp"
+                        android:textColor="@color/ghaneely_orange"
+                        android:layout_margin="5dp"
+                        android:textSize="18sp"/>
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tvdegp"
+                        android:layout_margin="8dp"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:id="@+id/tvpricedaily"
+/>
+                </RelativeLayout>
+                <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rldcontainer"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:text="@string/subday_text"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_marginBottom="10dp"/>
+            </RelativeLayout>
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/getit"
+                android:background="@color/ghaneely_orange"
+                android:textSize="16sp"
+                android:id="@+id/btdaily"
+                android:textAllCaps="false"
+
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
+
+

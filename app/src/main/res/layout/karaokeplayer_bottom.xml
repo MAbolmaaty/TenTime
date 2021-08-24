@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:paddingTop="5dp"
+    android:id="@+id/linkar"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/ivrecord"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@mipmap/karaokeoff" />
+    <Button
+        android:id="@+id/ivrecord_pause"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:background="@mipmap/karaokeon" />
+    <RelativeLayout
+        android:id="@+id/seek_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ivrecord"
+        android:orientation="horizontal"
+        android:paddingTop="8dip">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:indeterminate="false"
+            android:maxHeight="3dp"
+            android:progressDrawable="@drawable/progressstyle"
+            android:thumb="@mipmap/ellipse" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/textBufferDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|start"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:textColor="@color/white" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/textDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|end"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="right|end"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

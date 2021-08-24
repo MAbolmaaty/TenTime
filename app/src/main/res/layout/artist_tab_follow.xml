@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+
+    <com.binarywaves.ghaneely.ghannelystyles.CustomtextList
+        android:id="@+id/tvfollowcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:text=""/>
+
+    <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btfollow"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/followtextsize"
+        android:text="@string/follow"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+        android:layout_width="wrap_content"
+        android:id="@+id/btunfollow"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:textSize="@dimen/followtextsize"
+        android:text="@string/unfollow"
+        android:background="@drawable/buttonunfollowhsape"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"
+
+        android:visibility="gone"
+        />
+</LinearLayout>
+

@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_empty">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip">
+        <ImageView
+            android:id="@+id/pointicon"
+            android:layout_width="@dimen/pointdimension"
+            android:layout_height="@dimen/pointdimension"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp"
+android:visibility="invisible"
+            android:background="@mipmap/point"
+            android:contentDescription="@string/app_name" />
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_toLeftOf="@id/pointicon"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp">
+            <ImageView
+                android:id="@+id/imagesingerIcon"
+                android:layout_width="@dimen/albumlisticonheight_width"
+                android:layout_height="@dimen/albumlisticonheight_width"
+
+                android:src="@mipmap/defualt_img"
+                android:contentDescription="@string/app_name" />
+            <FrameLayout
+                android:id="@+id/framecon"
+                android:layout_width="@dimen/albumlisticonheight_width"
+                android:layout_height="30dp"
+                android:background="@color/transparentsearch"
+                android:layout_gravity="bottom">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/songsearch"
+                    android:id="@+id/ivoverlay"
+                    />
+            </FrameLayout>
+        </FrameLayout>
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/frame"
+            android:layout_toStartOf="@+id/frame"
+            android:gravity="right|center"
+            android:lines="1"
+
+            android:paddingRight="3dip"
+            android:paddingEnd="3dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/frame"
+            android:layout_toStartOf="@id/frame"
+            android:lines="3"
+
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/followtextsize" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

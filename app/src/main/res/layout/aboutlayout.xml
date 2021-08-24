@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<RelativeLayout
+            android:id="@+id/Title_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@color/thinblack" >
+
+            <ImageView
+                android:id="@+id/navigation_up"
+                android:layout_width="30dp"
+
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingTop="5dip"
+                android:src="@mipmap/back_orange" />
+
+            <TextView
+                android:id="@+id/title_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:paddingTop="5dip"
+                android:text="@string/about"
+                android:autoLink="all"
+                android:textColor="@color/Orange_new"
+                android:textSize="20dip" />
+        </RelativeLayout>
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical" >
+
+        <WebView
+            android:id="@+id/TEXT_STATUS_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0" />
+
+    </ScrollView>
+
+</LinearLayout>

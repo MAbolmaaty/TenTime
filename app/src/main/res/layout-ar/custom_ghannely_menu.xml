@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgray"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        tools:ignore="UselessParent">
+
+
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="@dimen/settingicon_height"
+            android:layout_height="@dimen/settingicon_height"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:visibility="invisible"
+            android:src="@mipmap/checkpopmenu"  />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageViewIcon"
+            android:layout_toRightOf="@id/imageViewIcon"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingLeft="15dp"
+            android:paddingStart="15dp"
+            tools:ignore="RtlSymmetry">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextViewSemiBold
+                android:id="@+id/textViewName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:textSize="@dimen/menucustomtextsize"
+                tools:ignore="RtlHardcoded" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

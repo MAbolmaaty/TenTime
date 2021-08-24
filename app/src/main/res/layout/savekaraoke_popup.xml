@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:lines="2"
+            android:text="@string/karaokesave"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/change"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/ghaneely_orange"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/yes"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize"
+            android:layout_alignParentStart="true" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/cancel"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/thinblack"
+            android:gravity="center"
+            android:text="@string/no"
+
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/albumtextsize"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

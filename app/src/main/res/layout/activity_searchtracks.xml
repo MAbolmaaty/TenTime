@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkgray"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/rlno_search"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_above="@id/audioplayer"
+        android:background="@color/darkgray"
+
+
+        >
+        <ImageView
+            android:id="@+id/nosearch"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/nosearch"
+            android:contentDescription="@string/no_search_result" />
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:text="@string/nosearch"
+            android:textColor="@color/graySearch"
+            android:textSize="18sp"
+            android:layout_below="@id/nosearch"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvtrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/audioplayer"
+        android:layout_toEndOf="@+id/rlno_search"
+        android:layout_toRightOf="@+id/rlno_search"
+android:layout_alignParentTop="true"
+        android:background="@color/darkgray"
+        android:divider="@color/black"
+        android:dividerHeight="2dp" />
+    <include
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        layout="@layout/progressbarwhell"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/audioplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        layout="@layout/audioplayer"
+        android:visibility="gone"
+        />
+</RelativeLayout>

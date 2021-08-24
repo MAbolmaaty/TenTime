@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/splash"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/logo_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/logo_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/logo" />
+
+        <TextView
+            android:id="@+id/emailtext"
+            android:layout_width="200dip"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/logo_iv"
+            android:layout_alignRight="@+id/logo_iv"
+            android:layout_below="@+id/logo_iv"
+            android:layout_marginTop="10dp"
+            android:background="@color/thinblack"
+            android:ems="10"
+            android:gravity="center"
+            android:text="info@ghaneely.com"
+            android:textColor="@color/white" >
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="100dip"
+        android:layout_height="35dp"
+        android:layout_below="@+id/logo_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@color/ghaneely_orange"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

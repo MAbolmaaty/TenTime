@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "660516876353",
+    "firebase_url": "https://ghannely.firebaseio.com",
+    "project_id": "ghannely",
+    "storage_bucket": "ghannely.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660516876353:android:1cc1c24c7a43b4a9",
+        "android_client_info": {
+          "package_name": "com.binarywaves.Ghaneely"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660516876353-e8uvfol9rjon4frqgs9j4iaht2paqkh3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.binarywaves.Ghaneely",
+            "certificate_hash": "c306519222475707ad89e1181bd53c2e1d29b13d"
+          }
+        },
+        {
+          "client_id": "660516876353-fgps86q10eb4mst1okfmsojpt1gcvstj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBk9teRCB75KoBXuEtZ5u4IBunvKCYN_fs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660516876353-fgps86q10eb4mst1okfmsojpt1gcvstj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

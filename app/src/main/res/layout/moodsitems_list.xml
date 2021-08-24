@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/ic_launcher">
+
+        </ImageView>
+    </LinearLayout>
+
+    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+        android:id="@+id/item_text"
+        android:layout_width="match_parent"
+        android:layout_height="46dip"
+        android:layout_below="@+id/image_layout"
+        android:singleLine="true"
+        android:gravity="center|center_vertical"
+        android:maxLines="1"
+        android:background="@color/darkgray"
+        android:textColor="@color/white" />
+</RelativeLayout>

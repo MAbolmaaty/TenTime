@@ -1,0 +1,9 @@
+at/technikum/mti/fancycoverflow/BuildConfig.java
+ at.technikum.mti.fancycoverflow.BuildConfig
+at/technikum/mti/fancycoverflow/FancyCoverFlowItemWrapper.java
+ at.technikum.mti.fancycoverflow.FancyCoverFlowItemWrapper
+at/technikum/mti/fancycoverflow/FancyCoverFlow.java
+ at.technikum.mti.fancycoverflow.FancyCoverFlow
+ at.technikum.mti.fancycoverflow.FancyCoverFlow$LayoutParams
+at/technikum/mti/fancycoverflow/FancyCoverFlowAdapter.java
+ at.technikum.mti.fancycoverflow.FancyCoverFlowAdapter

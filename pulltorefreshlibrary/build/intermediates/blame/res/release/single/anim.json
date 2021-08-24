@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_to_bottom.xml",
+        "source": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_from_bottom.xml",
+        "source": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\res\\anim\\slide_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_in_from_top.xml",
+        "source": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\build\\intermediates\\res\\merged\\release\\anim\\slide_out_to_top.xml",
+        "source": "E:\\Workspace\\Androidstodioproject\\Ghannely\\pulltorefreshlibrary\\res\\anim\\slide_out_to_top.xml"
+    }
+]

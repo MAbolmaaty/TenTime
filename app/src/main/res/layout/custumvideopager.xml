@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:id="@+id/framecontanier"
+        android:layout_width="match_parent"
+        android:layout_height="170dp">
+
+        <ImageView
+            android:id="@+id/ivposter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/app_name"
+             />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/playvideo" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/framecontanier"
+        android:layout_marginBottom="5dp"
+
+        android:layout_marginTop="5dp"
+        android:background="@color/darkgray">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+            android:id="@+id/tvsingername"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/tvsongname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/tvsongname"
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:singleLine="true" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/tvsongname"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvsingername"
+            android:layout_toLeftOf="@+id/controller"
+            android:layout_toStartOf="@+id/controller"
+
+            android:ellipsize="marquee"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            android:singleLine="true" />
+
+        <RelativeLayout
+            android:id="@+id/controller"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/ivplay"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:background="@mipmap/videoicon"
+                android:contentDescription="@string/app_name"
+
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

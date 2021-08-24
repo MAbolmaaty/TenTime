@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="7dp"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:paddingStart="4dp"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/player_list1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="0.1"
+        android:dividerHeight="1dp"
+        android:divider="@android:color/transparent"
+
+        android:cacheColorHint="#00000000"
+        android:layout_marginBottom="10dip" >
+
+        </ListView>
+
+    <RelativeLayout
+        android:layout_width="290dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/darkgray"
+
+        android:orientation="horizontal" >
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/change"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+
+            android:background="@color/ghaneely_orange"
+            android:textAllCaps="false"
+            android:textSize="@dimen/albumtextsize"
+            android:text="@string/cretaeplaylist"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/cancel"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toLeftOf="@+id/change"
+            android:background="@color/thinblack"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textSize="@dimen/albumtextsize"
+            android:textColor="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/change"
+            android:layout_marginStart="5dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

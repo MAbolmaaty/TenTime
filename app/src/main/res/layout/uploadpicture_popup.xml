@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgray"
+>
+
+
+        <FrameLayout
+            android:layout_width="300dp"
+            android:id="@+id/frame"
+            android:layout_centerHorizontal="true"
+            android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/ivprofile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/profilepicture"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:layout_margin="2dp"
+
+
+            android:contentDescription="@string/upload" />
+
+        <ImageView
+
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:src="@mipmap/updatepp"
+            android:id="@+id/ivcamera"
+            android:layout_margin="5dp"
+
+            android:contentDescription="@string/upload"
+            tools:ignore="RtlHardcoded" />
+        </FrameLayout>
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progressbarwhell"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:weightSum="1"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginBottom="5dp"
+
+        android:layout_below="@id/frame"
+        >
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/upload"
+            android:layout_width="150dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:text="@string/upload"
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize"
+            android:paddingLeft="10dp"
+            android:textAllCaps="false"
+            android:drawableLeft="@mipmap/upload"
+            android:background="@color/ghaneely_orange"
+            android:paddingStart="10dp"
+            tools:ignore="RtlSymmetry"
+            android:drawableStart="@mipmap/upload" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/cancel"
+            android:layout_width="150dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft= "2dp"
+            android:layout_marginStart="2dp"
+            android:text="@string/cancel"
+            android:textSize="@dimen/albumtextsize"
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            android:background="@color/dark_grey"/>
+    </LinearLayout>
+
+
+    </RelativeLayout>

@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:minHeight="40dp"
+        >
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="mmmmm"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="@dimen/menuicon_height"
+            android:layout_height="@dimen/menuicon_height"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/test"
+            android:contentDescription="@string/app_name"
+            android:src="@mipmap/iconsho" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/imageViewIcon"
+            android:layout_toRightOf="@id/imageViewIcon"
+            android:paddingLeft="15dp">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                android:id="@+id/textViewName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/albumtextsize" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

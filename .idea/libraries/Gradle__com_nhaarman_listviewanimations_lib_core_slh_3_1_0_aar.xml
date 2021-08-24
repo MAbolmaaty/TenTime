@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.nhaarman.listviewanimations:lib-core-slh:3.1.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3ffd3e7cb725d30865e07dd6d55edd1a/transformed/lib-core-slh-3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/2d92b2a4ef8a257a9e3797457d87c20a/transformed/lib-core-slh-3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f9db3a607d69a45f88a567448dd28686/transformed/lib-core-slh-3.1.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/f9db3a607d69a45f88a567448dd28686/transformed/lib-core-slh-3.1.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/f9db3a607d69a45f88a567448dd28686/transformed/lib-core-slh-3.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nhaarman.listviewanimations/lib-core-slh/3.1.0/45e247b70497b1d12d1c382768d7f50dcb24b57c/lib-core-slh-3.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.nhaarman.listviewanimations/lib-core-slh/3.1.0/34e3bf7a66ed4ac020a2f5adc086586ab8a1823a/lib-core-slh-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

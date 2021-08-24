@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/karoketransparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            android:weightSum="0.8">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.4">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/bckground" />
+                <ImageView
+                    android:id="@+id/close_player"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="center"
+                    android:src="@mipmap/closefinal" />
+                <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_gravity="bottom
+"
+                    android:text="@string/ghannely_features"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </FrameLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:weightSum="5">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivdownload"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/downloadrel" />
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivdownload"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/download"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivkaroke"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/karaoke" />
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivkaroke"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/karoke"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivprelease"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/prerelease" />
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivprelease"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/prerelease"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="11sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivnoads"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/noads" />
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ivnoads"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/noads"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/ivdatafree"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/datafree" />
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/ivdatafree"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/datafree"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="12sp" />
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.2">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButtonBold
+                android:id="@+id/btmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/button_money"
+                android:gravity="center"
+android:layout_margin="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/btremoveads"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/btmoney"
+                android:background="@drawable/curvedorange_button"
+                android:gravity="center"
+                android:text="@string/getitnow"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

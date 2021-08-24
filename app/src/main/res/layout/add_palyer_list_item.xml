@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:background="@drawable/listaddbackground"
+  >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/add_player_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/play" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/add_player_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="left"
+            android:layout_toRightOf="@id/add_player_icon"
+            android:layout_toEndOf="@id/add_player_icon"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+</RelativeLayout>

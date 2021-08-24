@@ -1,0 +1,340 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="APP_ID">504168436432697</string>
+    <string name="facebook_app_id" tools:ignore="MissingTranslation">504168436432697</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb504168436432697</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="app_name">Ghaneely</string>
+    <string name="splash_name">غنيلي</string>
+    <string name="egp">EGP</string>
+
+    <string name="day">Day</string>
+        <string name="month">Month</string>
+
+
+    <string name="gnrl_internet_error">Please Check Your Internet Connection !</string>
+    <string name="checkcode">Please enter valid active code ..</string>
+    <string name="entercode">Please Enter Activation  Code</string>
+    <string name="likes">Likes</string>
+    <string name="playlist">Playlists</string>
+    <string name="no_playlist">You haven`t added any playlist yet.</string>
+
+    <string name="playlistartist">Playlist</string>
+
+    <string name="song">Songs</string>
+    <string name="recenltlyplayed"> Recent plays</string>
+    <string name="features">Recommendations</string>
+    <string name="passwordhintreg"> Choose Password</string>
+    <string name="passwordhintlogin"> Enter Password</string>
+
+    <string name="send"> Send E-mail</string>
+    <string name="mobile_hint">  Mobile number</string>
+    <string name="Register">Register</string>
+    <string name="back">Back</string>
+    <string name="EmptyField">please fill all required fields</string>
+    <string name="notvalid_formate">Please check your phone number</string>
+    <string name="userlesszero">Please try again ..</string>
+    <string name="cretaeplaylist">  Create Playlist </string>
+    <string name="connect">  Connect </string>
+    <string name="popnumber">  I’m Orange customer </string>
+    <string name="resendcode"> <u> Resend Code</u> </string>
+    <string name="facebooklayout"> Share your favorite music with your friends</string>
+
+    <!-- Alert dialouge -->
+    <string name="no_sim">Sorry no sim available</string>
+    <string name="Activation_title"> Activation Code</string>
+    <string name="no_search_result">No Result Found </string>
+    <string name="search_result"> Search Result</string>
+    <string name="playlist_title"> New Tracks</string>
+    <string name="Top_songs"> Top 20 </string>
+    <string name="Editor_title"> Just For You</string>
+    <string name="Friend_title">Your Artist Station</string>
+    <string name="video_title">Video Clips</string>
+
+
+    <string name="inter_title">Radio</string>
+    <string name="personal_dj"> Moods</string>
+    <string name="underground">Underground Music</string>
+    <string name="album_title">New Albums</string>
+    <string name="follow">  \u0020\u0020 \u0020 Follow \u0020\u0020 \u0020 </string>
+    <string name="unfollow">  \u0020\u0020 \u0020 Unfollow \u0020\u0020 \u0020 </string>
+
+    <string name="create_playlist"> \u0020\u0020 \u0020Create Playlist\u0020\u0020 \u0020 </string>
+    <string name="material_icon_undo">&#xeb2c;</string>
+    <string name="thnxmessage">Thank You for Waiting</string>
+    <string name="like"> Like</string>
+
+    <string name="unlike"> Unlike</string>
+
+
+    <string-array name="nav_drawer_items">
+        <item>Home</item>
+        <item>Search</item>
+        <item>Likes</item>
+        <item>Your Playlists</item>
+        <item> Inbox</item>
+        <item>Friends</item>
+        <item>Radio </item>
+        <item>Karaoke </item>
+        <item>Downloads </item>
+
+        <item>Settings </item>
+
+        <item> Ghaneely Extra</item>
+        <item>Gifts </item>
+        <item>Help </item>
+        <item>Your Account is Free</item>
+    </string-array>
+    <string-array name="player_list">
+        <item>Like</item>
+        <item>Add To Playlist</item>
+        <item>Set As Call Tone</item>
+        <item>Lyrics</item>
+        <item>Download</item>
+        <item>Share</item>
+        <item>Radio</item>
+        <item>Go To Artist</item>
+        <item>Go to Album </item>
+    </string-array>
+    <string-array name="player_listunlike">
+        <item>Unlike</item>
+        <item>Add To Playlist</item>
+        <item>Set As Call Tone</item>
+        <item>Lyrics</item>
+        <item>Download</item>
+        <item>Share</item>
+        <item>Radio</item>
+        <item>Go to Artist</item>
+        <item>Go to Album </item>
+    </string-array>
+    <!-- Video player list-->
+    <string-array name="video_list">
+        <item>Like</item>
+        <item>Download</item>
+        <item>Share</item>
+        <item>Radio</item>
+        <item>Go To Artist</item>
+    </string-array>
+    <string-array name="video_listunlike">
+        <item>Unlike</item>
+        <item>Download</item>
+        <item>Share</item>
+        <item>Radio</item>
+        <item>Go to Artist</item>
+    </string-array>
+
+    <string name="arabicmenu">Arabic</string>
+    <string name="intment">Int.</string>
+    <string name="arandint">Ar&amp;Int.</string>
+
+    <string-array name="menupopup">
+        <item>Arabic</item>
+        <item>International</item>
+        <item>Arabic &amp; International</item>
+
+    </string-array>
+    <!-- audioplayer -->
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+
+    <color name="white">#ffffff</color>
+
+    <dimen name="small_button_width">30dp</dimen>
+
+    <!-- Setting -->
+    <string name="language">Language</string>
+    <string name="changepass">Change Password</string>
+    <string name="enteroladpass">  Current Password </string>
+    <string name="enternewpass">    New Password </string>
+    <string name="confirmpass">  Confirm New Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="logout">Logout</string>
+    <string name="about">About Ghaneely</string>
+    <string name="changepic">Add Photo</string>
+    <!-- Albumscreen -->
+
+    <string name="otheralbum">Other Albums  </string>
+    <string name="similaralbum">Related Albums </string>
+    <!-- artistscreen -->
+    <string name="album">Albums </string>
+
+    <string name="singke">Singles </string>
+    <string name="similarart">Related Artists </string>
+    <!-- searchlayout -->
+    <string name="fontello_search">&#xe816;</string>
+
+    <!-- push notification -->
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="playlistname">Playlist Name </string>
+    <string name="saveplaylist">Save Playlist</string>
+    <string name="removefromplaylist">Swipe again to confirm delete</string>
+    <string name="logoutdialog">Are you sure you want to Log Out?</string>
+    <string name="pleaseregister">Please Register First</string>
+    <string name="login">Login </string>
+    <string name="languagemessage"> Do you want to change the language ?</string>
+    <string name="karaokesave"> Do you want to save your record ?</string>
+
+    <string name="mobileerror">This service is available for orange Egypt customers only…</string>
+    <string name="invalidpassword">Please enter correct password …</string>
+    <string name="loginpopup">Incorrect login data,Please go to register or click back to correct your data..</string>
+
+    <string name="addfriend">Add friends</string>
+    <string name="friendstitle">Your Facebook Friends On Ghaneely</string>
+    <string name="maxcharacter">Please enter at least 2 letters to search</string>
+    <string name="waitmessage">Please wait 30-minute and retry again</string>
+    <string name="follower">Followers</string>
+    <string name="calltonenotavailable">Call tone is not available for this track.</string>
+
+
+    <string name="getghannelypremuim">Get Ghaneely Extra</string>
+    <string name="unsubghannelypremuim">Unsubscribe from Ghaneely Extra</string>
+
+
+    <string name="english" tools:ignore="MissingTranslation">En</string>
+    <string name="arabic" tools:ignore="MissingTranslation">عربي</string>
+
+    <string name="tracks"> Tracks</string>
+    <string name="notpicfound">You haven\'t picked Image</string>
+    <string name="wrongthing" tools:ignore="MissingTranslation">Something went wrong</string>
+    <string name="password_notmatch">Password doesn`t match</string>
+    <string name="requiredfields">Please fill All required fields and password not match</string>
+    <string name="passwordchanged">Password changed successfully</string>
+    <string name="checkdata">Please check your input data</string>
+    <string name="autoplaylist">Auto Playlist</string>
+    <string name="songadded">Song added successfully.</string>
+
+    <string name="resendcodetext"><![CDATA[<u>Resend Code</u>]]></string>
+
+    <string name="recentsearch">Recent Search</string>
+    <string name="allsearch">All</string>
+
+    <string name="tracksearch">Tracks</string>
+
+    <string name="playlistsearch">Playlist</string>
+
+    <string name="artistsearch">Artist</string>
+    <string name="albumsearch">Album</string>
+    <string name="video_search">Video</string>
+
+    <string name="typehere">Type here</string>
+    <string name="upload">Upload</string>
+    <string name="Uploadsuccess">Upload success</string>
+    <string name="selectpic">You must select image from gallery before you try to upload</string>
+
+    <string name="nofriendsfound">None of your friends have Ghaneely Application. Click here and invite them to connect </string>
+    <string name="follwartist">Followed Artists</string>
+    <string name="norecentdata">Your Friend doesn`t have recent tracks</string>
+    <string name="nothavelyrics">This track does`t have any lyrics yet</string>
+    <string name="tryagain">try again</string>
+    <string name="nocredit">No credit enough</string>
+
+    <string name="permuimtext">Enjoy downloading your favorite songs on Ghaneely Extra packages</string>
+    <string name="monthly">Monthly</string>
+    <string name="daily">Daily</string>
+    <string name="getit">Get it</string>
+    <string name="getitnow">Get it</string>
+
+    <string name="viewmore">View More</string>
+
+    <string name="viewless">View Less</string>
+    <string name="notrackselected">Please select track to create playlist</string>
+
+
+    <string name="submon_text">1 Month Subscription</string>
+
+    <string name="subday_text">1 Day Subscription</string>
+
+    <string name="calltonehint">Have your friends listen to your favorite songs when calling you!
+click here and set it as your call tone  </string>
+
+    <string name="calltune_charge">  Have your friends listen to your favorite songs when calling you!   \n
+
+    click Yes and set it as your call tone for 5 L.E only</string>
+
+    <string name="karaokehint">\u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020
+                   Click here to record \u0020\u0020\u0020\u0020\u0020\u0020\u0020\u0020         </string>
+
+    <string name="nolike">No Likes Found</string>
+    <string name="enterplaylist_name">Please enter playlist name before save</string>
+    <string name="removeads">Remove Ads</string>
+    <string name="close">Close</string>
+    <string name="nodata">No Data Found</string>
+    <string name="subscripetxt">Subscribe</string>
+    <string name="ghannely_features">Get Ghaneely Extra and enjoy unlimited free music</string>
+
+    <!-- ghannely feature strings -->
+
+    <string name="download">Download Songs</string>
+    <string name="karoke">Karaoke</string>
+    <string name="prerelease">International Songs</string>
+    <string name="noads">No Ads</string>
+    <string name="datafree">Data Free</string>
+    <string name="noinboxfound">No Message Found</string>
+
+
+    <string name="nosearch">Search for Songs,Artist and Playlist</string>
+
+    <string name="playshuffle">Shuffle Play</string>
+
+    <string name="save">Save</string>
+
+    <string name="swipeinbox">Swipe to the left to delete or manage the notification</string>
+
+    <string name="gotit">Got It</string>
+    <string name="uploading">Uploading Photo</string>
+
+    <string name="songs">Songs</string>
+    <string name="saved_Songs">Saved Songs</string>
+    <string name="name_record">Name Your Record</string>
+
+    <string name="Caraoke">Karaoke</string>
+
+
+    <string name="noExtStorageAvailable">External storage is unavailable</string>
+    <string name="recordingError">Error recording audio</string>
+    <string name="saveRecordError">Error saving audio record</string>
+    <string name="saveRecordsuccess">Success saving audio record</string>
+
+    <string name="videoRecordingError" tools:ignore="MissingTranslation">Recording video failed</string>
+    <string name="enjoyfeature">And enjoy many other features .</string>
+    <string name="dimmedtext">Get ghaneely extra to listen to this track and more </string>
+    <string name="sucess">Success !</string>
+    <string name="reject">Error !</string>
+    <string name="sucesssubscribe">You have subscribed sucessfully in Ghaneely Extra</string>
+    <string name="unsucesssubscribe">You have unsubscribed from Ghaneely Extra</string>
+
+    <string name="retry">Retry</string>
+    <string name="offlinemsg">You`re in offline mode . Please check your connection.</string>
+    <string name="offlinemsgtosyn">You`re in offline mode . Please check your connection to sync your account</string>
+
+    <string name="nomesage">No Message Found</string>
+    <string name="ghannelydownloadtrack">Downloaded Tracks</string>
+    <string name="ghannelydownloadvideo">Downloaded Videos</string>
+
+    <string name="filenotfound">Sorry File Not Found</string>
+    <string name="generalerror">Error.. try again</string>
+    <string name="downloadsuccess">Song  downloaded successfully</string>
+    <string name="downloadvideosuccess">Video  downloaded successfully</string>
+
+    <string name="deletedownload">Are you sure you want to delete this song ?</string>
+    <string name="uusubconfirm">Are you sure you want to unsubscribe from Ghaneely Extra ?</string>
+    <string name="alreadydownloaded">This Song already downloaded</string>
+    <string name="done">Done</string>
+    <string name="expiresubscribe"> Are you sure you want to unsubscribe from Ghaneely Extra ?  </string>
+
+    <string name="blank" translatable="false">" "</string>
+    <string name="dimmedfulltrack">full track</string>
+    <string name="fullvideodimmed">full video</string>
+    <string name="lyricserror">Error in downloading. Please try again.</string>
+    <string name="forget_password">Forgot Password!</string>
+    <string name="sendactivate">Send Activation code</string>
+    <string name="submit">Submit</string>
+    <string name="search">Search</string>
+    <string name="channel_name" translatable="false">com.binarywaves.ghaneely</string>
+    <string name="channel_description" translatable="false">ghaneely</string>
+    <string name="gracetext" translatable="false">Please renew your subscription to enjoy Ghaneely Extra</string>
+    <string name="ghannelydownload">Ghaneely Download</string>
+
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ghaneely_orange"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="7dip"
+    android:paddingTop="7dip">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+
+        <ImageView
+            android:id="@+id/ivfooter"
+            android:layout_width="@dimen/menuicon_width"
+            android:layout_height="@dimen/menuicon_height"
+            android:layout_gravity="right"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/diamond"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/dimmedtext"
+            tools:ignore="RtlHardcoded" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextViewSemiBold
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:text="@string/getghannelypremuim"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background_empty">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgray"
+        android:orientation="horizontal"
+        android:paddingRight="5dip">
+
+        <ImageView
+            android:id="@+id/pointicon"
+            android:layout_width="@dimen/pointdimension"
+            android:layout_height="@dimen/pointdimension"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_marginStart="3dp"
+android:visibility="invisible"
+            android:background="@mipmap/point"
+            android:contentDescription="@string/app_name" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/pointicon"
+            android:background="@color/darkgray">
+
+
+            <ImageView
+                android:id="@+id/imagesingerIcon"
+                android:layout_width="@dimen/albumlisticonheight_width"
+                android:layout_height="@dimen/albumlisticonheight_width"
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+
+                android:layout_centerVertical="true"
+
+                android:src="@mipmap/defualt_img"
+                android:contentDescription="@string/app_name" />
+
+            <FrameLayout
+                android:id="@+id/framecon"
+                android:layout_width="@dimen/albumlisticonheight_width"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="@color/transparentsearch">
+
+                <ImageView
+                    android:id="@+id/ivoverlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/songsearch" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/frame"
+            android:layout_toRightOf="@id/frame"
+            android:gravity="left"
+            android:lines="1"
+            android:paddingLeft="3dip"
+            android:paddingStart="3dip"
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:id="@+id/item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_title"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/frame"
+            android:gravity="left|start"
+            android:lines="3"
+            android:textColor="@color/grayText"
+            android:textSize="@dimen/followtextsize" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

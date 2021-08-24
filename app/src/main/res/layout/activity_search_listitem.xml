@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgray">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkgray"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/controller"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/ivplay"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:adjustViewBounds="true"
+                android:background="@mipmap/playicon"
+                android:contentDescription="@string/app_name" />
+
+            <com.binarywaves.ghaneely.ghannelyactivites.GIFDemo
+                android:id="@+id/gifimage"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+
+                android:contentDescription="@string/app_name"
+
+                android:visibility="gone"
+
+
+                />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="wrap_content"
+            android:background="@color/darkgray"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imagesingerIcon"
+                android:layout_width="@dimen/albumlisticonheight_width"
+                android:layout_height="@dimen/albumlisticonheight_width"
+
+                android:background="@mipmap/defualt_img"
+                android:contentDescription="@string/app_name" />
+
+            <FrameLayout
+                android:id="@+id/framecon"
+                android:layout_width="@dimen/albumlisticonheight_width"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="@color/transparentsearch">
+
+                <ImageView
+                    android:id="@+id/ivoverlay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:layout_gravity="center"
+
+                    android:src="@mipmap/songsearch"
+                    android:contentDescription="@string/song" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_toLeftOf="@+id/controller"
+            android:layout_toRightOf="@id/frame"
+            android:layout_toStartOf="@+id/controller"
+            android:layout_toEndOf="@id/frame">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomtextList
+                android:id="@+id/tvsongName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="start"
+                android:maxLines="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="@dimen/albumtextsize" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

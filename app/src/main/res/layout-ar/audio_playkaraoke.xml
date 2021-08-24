@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@mipmap/player_bg"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+        <ImageView
+            android:id="@+id/player_image"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp"
+            android:src="@mipmap/face"
+            android:contentDescription="@string/play"
+            android:layout_alignParentEnd="true" />
+        <LinearLayout
+            android:id="@+id/image_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginStart="10dip"
+            android:orientation="horizontal"
+            android:layout_alignParentStart="true">
+
+
+            <ImageView
+                android:id="@+id/play_img"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_width"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/playsmallplayer"
+                android:visibility="gone"
+                android:contentDescription="@string/play" />
+
+            <ImageView
+                android:id="@+id/btnPause"
+                android:layout_width="@dimen/small_button_width"
+                android:layout_height="@dimen/small_button_width"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/pausesmallplayer"
+                android:contentDescription="@string/pause" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/player_image"
+            android:layout_toRightOf="@id/image_linear"
+            android:orientation="vertical"
+            android:paddingRight="2dip"
+            android:layout_toStartOf="@+id/player_image"
+            android:layout_toEndOf="@id/image_linear"
+            android:paddingEnd="2dip"
+            tools:ignore="RtlSymmetry">
+
+
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                android:id="@+id/album_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="right"
+                android:ellipsize="marquee"
+                android:ems="15"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

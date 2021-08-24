@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/open"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:background="@color/darkgray"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageViewAlbumArt"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="@string/album" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/textSongName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textAlbumName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnPause"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@mipmap/paaause"
+                tools:ignore="ButtonStyle"
+                android:layout_marginEnd="6dp"
+                android:layout_marginStart="8dp" />
+
+            <Button
+                android:id="@+id/btnPlay"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="6dp"
+                android:background="@mipmap/plaay"
+                android:visibility="gone"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/next"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="8dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="5dp"
+            android:background="@mipmap/closefinal"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

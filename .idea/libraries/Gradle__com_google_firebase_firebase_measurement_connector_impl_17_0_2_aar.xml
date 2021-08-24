@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-measurement-connector-impl:17.0.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/c439f222db12f65530b65ac582f43b49/transformed/firebase-measurement-connector-impl-17.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d94de1b238ef49af6ee7e791a641fade/transformed/firebase-measurement-connector-impl-17.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e63e54fa162a94c99ca95a97830411e/transformed/firebase-measurement-connector-impl-17.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3e63e54fa162a94c99ca95a97830411e/transformed/firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3e63e54fa162a94c99ca95a97830411e/transformed/firebase-measurement-connector-impl-17.0.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

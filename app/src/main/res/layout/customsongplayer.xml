@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/transparent">
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/seek_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dip" >
+
+
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:indeterminate="false"
+            android:maxHeight="3dp"
+
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/progressstyle"
+            android:thumb="@mipmap/ellipse"  />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/seek_bar"
+            android:orientation="horizontal">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                android:id="@+id/textBufferDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|start"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/white" />
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                android:id="@+id/textDuration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|end"
+                android:layout_marginRight="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="right|end"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/controls"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+
+        <ImageView
+
+            android:layout_width="34dp"
+            android:layout_height="38dp"
+        android:layout_centerInParent="true"
+        android:src="@mipmap/playvideofull"
+        android:id="@+id/ivplay" />
+
+        <ImageView
+
+            android:layout_width="34dp"
+            android:layout_height="38dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/pause"
+            android:visibility="invisible"
+            android:id="@+id/ivpause" />
+
+        <ImageView
+
+            android:layout_width="33dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/forward"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivnext" />
+
+
+        <ImageView
+
+            android:layout_width="33dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:src="@mipmap/backward"
+            android:id="@+id/ivback" />
+    </RelativeLayout>
+</LinearLayout>

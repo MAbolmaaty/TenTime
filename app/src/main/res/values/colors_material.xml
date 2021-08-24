@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- Purple -->
+
+    <!-- Deep Purple -->
+
+    <!-- Red -->
+
+    <!-- Pink -->
+
+    <!-- Indigo -->
+
+    <!-- Blue -->
+
+    <!-- Light Blue -->
+
+    <!-- Cyan -->
+
+    <!-- Teal -->
+
+    <!-- Green -->
+
+    <!-- Light Green -->
+
+    <!-- Lime -->
+
+    <!-- Light Yellow -->
+
+    <!-- Yellow -->
+
+    <!-- Orange -->
+
+    <!-- Deep Orange -->
+
+    <!-- Grey -->
+    <color name="material_grey_50">#f9fafa</color>
+    <color name="material_grey_100">#f4f5f5</color>
+    <color name="material_grey_300">#e0e0e0</color>
+    <color name="material_grey_600">#757575</color>
+    <color name="material_grey_800">#424242</color>
+    <color name="material_grey_900">#202020</color>
+
+    <!-- Blue Grey -->
+    <color name="material_blue_grey_800">#37474f</color>
+    <color name="material_blue_grey_900">#263238</color>
+
+    <!-- Brown -->
+
+</resources>

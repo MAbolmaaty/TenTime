@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relcontainer"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+      <LinearLayout
+            android:id="@+id/image_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:orientation="horizontal"
+          android:layout_alignParentStart="true"
+          android:layout_marginStart="5dip">
+
+            <ImageView
+                android:id="@+id/play_imgslider"
+                android:layout_width="37dip"
+                android:layout_height="38dip"
+                android:background="@mipmap/plaay"
+                android:visibility="gone"
+                android:contentDescription="@string/play" />
+
+          
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/player_image"
+                android:layout_width="60dip"
+                android:layout_height="60dip"
+                android:layout_alignParentRight="true"
+                android:contentDescription="@string/album"
+                android:layout_alignParentEnd="true" />
+
+        <include
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            layout="@layout/progressbarwhell"
+            android:clickable="false"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/text_linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/image_linear"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/player_image"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:layout_alignStart="@+id/image_linear"
+            android:layout_toStartOf="@+id/player_image"
+            android:paddingStart="5dip"
+            tools:ignore="RtlSymmetry">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                android:id="@+id/song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:textColor="@color/white"
+                android:layout_marginEnd="3dp"
+                tools:ignore="RtlHardcoded" />
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                android:id="@+id/album_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                 android:layout_gravity="right"
+                android:gravity="right"
+                android:ellipsize="marquee"
+                android:textColor="@color/white"
+                android:singleLine="true"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

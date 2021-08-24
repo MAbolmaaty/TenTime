@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/Title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:background="@color/black" >
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/btdone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/title_txt"
+            android:layout_alignBottom="@+id/title_txt"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/black"
+            android:text="@string/done"
+            android:textColor="@color/ghaneely_orange"
+            android:textSize="18dip"
+            />
+
+
+
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextViewSemiBold
+            android:id="@+id/title_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_toLeftOf="@+id/navigation_up"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:freezesText="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:text="@string/create_playlist"
+            android:textColor="@color/Orange_new"
+            android:textSize="20dip" />
+        <ImageView
+            android:id="@+id/navigation_up"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/back_orangeright"
+            android:contentDescription="@string/app_name"/>
+
+
+    </RelativeLayout>
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:id="@+id/albums_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/audioplayer"
+        android:layout_below="@id/Title_layout"
+        android:fillViewport="true"
+        android:overScrollMode="always">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:id="@+id/playlist_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/playist_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+                    android:tag="sticky">
+
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="@string/recenltlyplayed"
+                        android:textColor="@color/orangelogocolor"
+                        android:textSize="@dimen/albumtextsize"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:layout_centerVertical="true"
+
+                        android:background="@color/black"
+
+                        />
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/playlist_drw" />
+
+
+                </LinearLayout>
+
+
+                <com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+                    android:id="@+id/recent_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/playist_linear"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/darkgray"
+                    android:divider="@color/black"
+                    android:dividerHeight="2dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/likes_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/playlist_relative"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/likes_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+                    android:tag="sticky">
+
+
+
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+
+                        android:text="@string/likes"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/orangelogocolor"
+                        android:textSize="@dimen/albumtextsize"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/imageView2"
+                        android:background="@color/black"
+
+                        />
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+
+                        android:src="@mipmap/smalllike" />
+                </LinearLayout>
+
+
+                <com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+                    android:id="@+id/likeslist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/likes_linear"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/darkgray"
+                    android:divider="@color/black"
+                    android:dividerHeight="2dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/feature_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/likes_relative"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/feature_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+                    android:tag="sticky">
+
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextViewSemiBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"                        android:text="@string/features"
+                        android:textColor="@color/orangelogocolor"
+                        android:textSize="@dimen/albumtextsize"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/imageView3"
+                        android:layout_centerVertical="true"
+
+                        android:background="@color/black"
+
+                        />
+                    <ImageView
+                        android:id="@+id/imageView3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="fitXY"
+                        android:layout_alignParentRight="true"
+                        android:src="@mipmap/headphone" />
+                </LinearLayout>
+
+
+                <com.nhaarman.listviewanimations.itemmanipulation.DynamicListView
+                    android:id="@+id/song_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/feature_linear"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/darkgray"
+                    android:divider="@color/black"
+                    android:dividerHeight="2dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progressbarwhell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:visibility="gone" />
+
+
+    <include
+        android:id="@+id/audioplayer"
+        layout="@layout/audioplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:visibility="gone" />
+
+</RelativeLayout>

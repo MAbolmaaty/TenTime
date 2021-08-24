@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">14dp</dimen>
+    <dimen name="activity_vertical_margin">14dp</dimen>
+    <dimen name="profile_width">120dp</dimen>
+    <dimen name="profile_height">120dp</dimen>
+    <dimen name="settingicon_height">21dp</dimen>
+
+    <dimen name="menuicon_height">27dp</dimen>
+    <dimen name="menuicon_width">27dp</dimen>
+    <dimen name="Playpause_height_width">32dp</dimen>
+
+    <dimen name="albumlisticonheight_width">65dp</dimen>
+    <dimen name="albumtextsize">16sp</dimen>
+    <dimen name="playlisttextsize">18sp</dimen>
+
+</resources>

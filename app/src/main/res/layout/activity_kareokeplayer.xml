@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <com.binarywaves.ghaneely.ghannelyactivites.KareokePackage.KareokeView.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/karaokedimmed">
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progressbarwhell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/karaokeplayer_header"
+        layout="@layout/karaokeplayer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/karaokeplayer_bottom"
+        android:layout_below="@id/karaokeplayer_header"
+        android:orientation="vertical">
+
+        <com.binarywaves.ghaneely.ghannelyactivites.KareokePackage.KareokeView.NonFocusableNestedScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideOverlay">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lyrics_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="1dp"
+                    tools:ignore="UselessParent">
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomarabicTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:id="@+id/tvlyrics"
+                        android:gravity="center_horizontal"
+                        android:scrollbars = "vertical"
+                        android:layout_below="@id/top_header_relative"
+                        android:layout_margin="10dp"/>
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+        </com.binarywaves.ghaneely.ghannelyactivites.KareokePackage.KareokeView.NonFocusableNestedScrollView>
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/karaokeplayer_bottom"
+        layout="@layout/karaokeplayer_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+
+
+        />
+</RelativeLayout>
+</RelativeLayout>

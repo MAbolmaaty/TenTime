@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rvcontainer"
+    android:background="@color/black">
+    <RelativeLayout
+        android:id="@+id/top_header_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/close_player"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="center"
+            android:src="@mipmap/closefinal"
+            />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:id="@+id/tvsongname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+        android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5sp"
+            android:layout_marginTop="5dp"
+            tools:ignore="RelativeOverlap" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:id="@+id/tvartistname"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tvsongname"
+            android:gravity="center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5sp"
+        />
+        </RelativeLayout>
+<com.binarywaves.ghaneely.ghannelystyles.CustomarabicTextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textColor="@color/white"
+    android:textSize="20sp"
+    android:id="@+id/tvlyrics"
+    android:gravity="center_horizontal"
+    android:scrollbars = "vertical"
+    android:layout_below="@id/top_header_relative"
+    android:layout_margin="10dp"/>
+
+    <include
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        layout="@layout/progressbarwhell"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"/>
+</RelativeLayout>

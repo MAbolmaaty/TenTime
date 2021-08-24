@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:id="@+id/imagecontainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@mipmap/radiomenubg"
+        android:layout_weight="0.40">
+
+        <ImageView
+            android:id="@+id/new_song_slider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/defualt_img"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:adjustViewBounds="true"
+            android:visibility="gone"
+            android:contentDescription="@string/app_name" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnconta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        android:layout_above="@id/audioplayer"
+
+        android:layout_weight="0.6">
+
+        <ListView
+            android:id="@+id/lvtrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="5dp"
+            android:background="@color/darkgray"
+            android:divider="@color/black"
+            android:dividerHeight="2dp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+
+    </LinearLayout>
+        <include
+            android:id="@+id/audioplayer"
+            layout="@layout/audioplayer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+
+            tools:ignore="ObsoleteLayoutParam" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progress"
+        layout="@layout/progressbarwhell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:indeterminate="true"
+        android:visibility="gone"
+
+        />
+
+
+</RelativeLayout>

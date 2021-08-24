@@ -1,0 +1,349 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.binarywaves.ghaneely">
+
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="com.binarywaves.ghaneely.ghannely_application_manager.Applicationmanager"
+        android:allowClearUserData="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/iconapp"
+        android:roundIcon="@mipmap/iconapprounded"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="false"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme"
+        android:vmSafeMode="true"
+        tools:replace="android:allowBackup,icon,theme,label,supportsRtl,roundIcon"
+        android:allowBackup="false"
+        tools:targetApi="m"
+        >
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+           />
+
+        <!-- [START firebase_service] -->
+        <service android:name="com.firebaseService.MyFirebaseMessagingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <!-- [END firebase_service] -->
+        <!-- [START firebase_iid_service] -->
+        <service android:name="com.firebaseService.MyFirebaseInstanceIDService"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.binarywaves.ghaneely.ghannely_application_manager.NetworkChangeReceiver"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </service>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.SplashScreenActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+     >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="ghaneely" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.RegisterActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"
+/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.ActivationScreen"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"
+
+
+/>        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.HomeActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.FavoritesActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.VideoPlayerActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+       />
+
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.MoodsActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.PlayListActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.KareokePackage.KareokePlayerActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"
+      />
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.PlayListTracksActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.PlayerAcreenActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.AddToActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+
+
+        <service
+            android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.service.SongService"
+            android:enabled="true"
+            android:stopWithTask="false"
+
+            android:exported="false" />
+
+        <service
+            android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.service.KaraokeSongService"
+            android:enabled="true"
+            android:stopWithTask="false"
+
+            android:exported="false" />
+        <service
+            android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.service.OFFLINEService"
+            android:enabled="true"
+            android:stopWithTask="false"
+            android:exported="false" />
+
+        <service
+            android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.service.OfflineVideoService"
+            android:enabled="true"
+            android:stopWithTask="false"
+            android:exported="false" />
+        <service
+            android:name="com.binarywaves.ghaneely.ghannelyservice.AdsPopUpService"
+            android:enabled="true"
+            android:stopWithTask="false"
+
+            android:exported="false" />
+
+        <service
+            android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.service.VideoService"
+            android:enabled="true"
+            android:stopWithTask="false"
+
+            android:exported="false" />
+
+        <receiver android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.receiver.NotificationBroadcast"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.tutorialsface.audioplayer.delete" />
+                <action android:name="com.tutorialsface.audioplayer.pause" />
+                <action android:name="com.tutorialsface.audioplayer.next" />
+                <action android:name="com.tutorialsface.audioplayer.play" />
+                <action android:name="com.tutorialsface.audioplayer.previous" />
+                <action android:name="com.tutorialsface.audioplayer.open" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.receiver.NotificationOffline"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.tutorialsface.audioplayer.delete" />
+                <action android:name="com.tutorialsface.audioplayer.pause" />
+                <action android:name="com.tutorialsface.audioplayer.next" />
+                <action android:name="com.tutorialsface.audioplayer.play" />
+                <action android:name="com.tutorialsface.audioplayer.previous" />
+                <action android:name="com.tutorialsface.audioplayer.open" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.service.SongServiceradio"
+            android:enabled="true"
+            android:stopWithTask="false"
+
+            android:exported="false" />
+
+        <receiver android:name="com.binarywaves.ghaneely.ghannelyaodioplayer.receiver.NotificationRadio"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="com.tutorialsface.audioplayer.delete3" />
+                <action android:name="com.tutorialsface.audioplayer.pause" />
+                <action android:name="com.tutorialsface.audioplayer.open" />
+                <action android:name="com.tutorialsface.audioplayer.play" />
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.SeetingActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.HelpActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.ArtistradioActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:exported="true"
+            android:value="@string/APP_ID" />
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.Friendlist_Activity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.FavoritesRadio"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.InboxActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.ListviwCheckbox_Activity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.LoginScreen"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.AboutGhaneelyActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.AlbumsTabs.AlbumTabsActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.ArtistTabs.ArtistTabsActivity"
+            android:configChanges="layoutDirection|locale"
+            tools:ignore="InnerclassSeparator"
+            android:screenOrientation="portrait"/>
+
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.SearchTabs.SearchTabActivity"
+            android:configChanges="layoutDirection|locale"
+            tools:ignore="InnerclassSeparator"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.KareokePackage.KaraokeTabs.KaraokeTabActivity"
+            android:configChanges="layoutDirection|locale"
+            tools:ignore="InnerclassSeparator"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.LyricsActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.FriendsTabs.FriendsTabActivity"
+            android:configChanges="layoutDirection|locale"
+            tools:ignore="InnerclassSeparator"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.AddtoVideoActivity"
+            android:configChanges="layoutDirection|locale"
+            android:theme="@style/DialogTheme"
+            android:excludeFromRecents="true"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.Activity_fullvideodownload"
+            android:configChanges="keyboardHidden|screenSize"
+            android:screenOrientation="landscape"
+            android:excludeFromRecents="true"
+/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.AlbumsGridActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.binarywaves.ghaneely.ghannelyactivites.DownloadActivity"
+            android:configChanges="layoutDirection|locale"
+            android:screenOrientation="portrait"/>
+        <meta-data        android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id"/>
+    </application>
+
+</manifest>

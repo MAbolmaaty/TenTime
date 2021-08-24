@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/darkgray"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_preview_image"
+        android:layout_width="fill_parent"
+        android:adjustViewBounds="true"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/app_name"
+        android:layout_height="fill_parent" />
+
+
+    <ImageView
+        android:id="@+id/btnIvClose"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="25dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/closefinal" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.piasy:rxandroidaudio:1.5.2@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d1255d8e66fa56b0ee20fa956977396e/transformed/rxandroidaudio-1.5.2/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/349141b7f77a81efa389cc808bc4265d/transformed/rxandroidaudio-1.5.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/09ccf80f8be1e176614f21ccc7b2dcd8/transformed/rxandroidaudio-1.5.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d1255d8e66fa56b0ee20fa956977396e/transformed/rxandroidaudio-1.5.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/d1255d8e66fa56b0ee20fa956977396e/transformed/rxandroidaudio-1.5.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/d1255d8e66fa56b0ee20fa956977396e/transformed/rxandroidaudio-1.5.2/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.piasy/rxandroidaudio/1.5.2/5d0e8592d881d7a3af12ed33fa1e2cb96185f55d/rxandroidaudio-1.5.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.piasy/rxandroidaudio/1.5.2/8e9be54e1b85d55deb0641649458e14f2d4684d6/rxandroidaudio-1.5.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

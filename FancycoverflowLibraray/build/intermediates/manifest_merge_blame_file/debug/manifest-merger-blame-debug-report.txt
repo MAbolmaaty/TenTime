@@ -1,0 +1,31 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3  ~ Copyright 2013 David Schreiber
+4  ~           2013 John Paul Nalog
+5  ~
+6  ~    Licensed under the Apache License, Version 2.0 (the "License");
+7  ~    you may not use this file except in compliance with the License.
+8  ~    You may obtain a copy of the License at
+9  ~
+10  ~        http://www.apache.org/licenses/LICENSE-2.0
+11  ~
+12  ~    Unless required by applicable law or agreed to in writing, software
+13  ~    distributed under the License is distributed on an "AS IS" BASIS,
+14  ~    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+15  ~    See the License for the specific language governing permissions and
+16  ~    limitations under the License.
+17-->
+18<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+19    package="at.technikum.mti.fancycoverflow"
+20    android:versionCode="1"
+21    android:versionName="1.0" >
+22
+23    <uses-sdk android:minSdkVersion="7" />
+23-->C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml
+24
+25    <application android:label="@string/app_name" >
+25-->C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:26:5-28:19
+25-->C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:26:18-50
+26    </application>
+27
+28</manifest>

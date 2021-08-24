@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/darkgray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="@string/name_record"
+            android:textColor="@color/ghaneely_orange"
+            android:textSize="20sp">
+
+        </com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomEditText
+            android:id="@+id/editText1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/edit_text_shape"
+            android:ems="10"
+            android:gravity="center"
+            android:padding="2dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/fadedgray"
+            android:textCursorDrawable="@color/ghaneely_orange" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/change"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="0.5"
+            android:background="@color/ghaneely_orange"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize" />
+
+        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+            android:id="@+id/cancel"
+
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@color/thinblack"
+
+            android:text="@string/cancel"
+
+            android:textAllCaps="false"
+
+            android:textColor="@color/white"
+            android:textSize="@dimen/albumtextsize" />
+    </LinearLayout>
+
+</LinearLayout>

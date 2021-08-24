@@ -1,0 +1,11 @@
+<com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:textColor="@drawable/texttab_selector"
+    android:textSize="11sp"
+    android:maxLines="1"
+    android:rotationY="180"
+
+    />

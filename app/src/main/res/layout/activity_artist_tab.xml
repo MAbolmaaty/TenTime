@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/activity_pull_to_zoom_scroll_view"
+        android:id="@+id/titlelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imagecontainer"
+    android:layout_below="@id/titlelayout"
+    >
+    <include layout="@layout/activity_artist_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/headerlayout"
+
+
+        tools:ignore="NestedWeights" />
+
+    <include layout="@layout/artist_tab_follow"
+        android:layout_width="match_parent"
+        android:layout_below="@id/headerlayout"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_below="@id/imagecontainer"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <include
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            layout="@layout/progressbarwhell"
+            android:clickable="false"
+            android:indeterminate="true"
+            android:visibility="gone"
+            />
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            app:tabIndicatorColor="@color/ghaneely_orange"
+            android:layoutDirection="locale"
+            android:minHeight="?attr/actionBarSize"
+            tools:targetApi="jelly_bean_mr1" />
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/audioplayer"
+            android:layout_below="@id/tab_layout"
+            tools:ignore="ObsoleteLayoutParam" />
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+    <include
+        android:id="@+id/audioplayer"
+        layout="@layout/audioplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"
+
+        />
+</RelativeLayout>

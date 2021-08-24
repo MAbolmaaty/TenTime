@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/top_header_relative"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/ivimage"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/defualt_img"
+                />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+
+            >
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="@string/calltune_charge"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/change"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:layout_marginEnd="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+
+                android:layout_marginStart="5dp"
+
+                android:layout_weight="0.5"
+                android:background="@color/ghaneely_orange"
+                android:padding="5dp"
+                android:text="@string/yes"
+                android:textColor="@color/white" />
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.5"
+                android:background="@color/thinblack"
+                android:text="@string/no"
+
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Ghaneely.iml" filepath="$PROJECT_DIR$/.idea/modules/Ghaneely.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FancycoverflowLibraray/Ghaneely.FancycoverflowLibraray.iml" filepath="$PROJECT_DIR$/.idea/modules/FancycoverflowLibraray/Ghaneely.FancycoverflowLibraray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ProgressWheel/Ghaneely.ProgressWheel.iml" filepath="$PROJECT_DIR$/.idea/modules/ProgressWheel/Ghaneely.ProgressWheel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/androidHorizontalListViewmodule/Ghaneely.androidHorizontalListViewmodule.iml" filepath="$PROJECT_DIR$/.idea/modules/androidHorizontalListViewmodule/Ghaneely.androidHorizontalListViewmodule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Ghaneely.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Ghaneely.app.iml" />
+    </modules>
+  </component>
+</project>

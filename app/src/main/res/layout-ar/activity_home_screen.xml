@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:widget="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+
+    <com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+        android:id="@+id/albums_scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/audioplayer"
+        android:fillViewport="true"
+        android:overScrollMode="always">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true">
+
+
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/topic_image1"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/Gallery01"
+                android:visibility="gone" />
+
+
+            <RelativeLayout
+                android:id="@+id/playlists_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topic_image1">
+
+                <LinearLayout
+                    android:id="@+id/playist_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:gravity="right|end"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dip"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:tag="sticky"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <ImageView
+                        android:id="@+id/playist_arrow"
+
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/downarrow" />
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dip"
+                        android:layout_marginEnd="5dip"
+
+                        android:text="@string/playlist_title"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/newtracklist"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/homecomponent_height"
+                    android:layout_below="@+id/playist_linear"
+                    android:divider="@color/black"
+                    widget:dividerWidth="10dp"
+                    tools:listitem="@layout/song_row_item"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/rlnewlist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/playist_linear"
+                    android:focusableInTouchMode="true"
+                    android:visibility="gone">
+
+                    <ListView
+                        android:id="@+id/lvnewtrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:divider="@color/black"
+                        android:dividerHeight="1dp"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rlmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/lvnewtrack"
+                        android:background="@drawable/buttonorange_shape"
+                        android:layout_centerHorizontal="true">
+
+                        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                            android:id="@+id/tvmore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/ghaneely_orange"
+                            android:textSize="14sp" />
+
+
+                        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                            android:id="@+id/ivmore"
+                            android:layout_width="15dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"                        android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@id/tvmore"
+                            android:layout_toEndOf="@id/tvmore" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/new_album_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/playlists_relative"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/new_album_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dip"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:tag="sticky"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginStart="10dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:visibility="gone"
+                        android:src="@mipmap/arrowar" />
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/album_title"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/album_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/homecomponent_height"
+                    android:layout_below="@+id/new_album_linear"
+                    android:divider="@color/black"
+                    widget:dividerWidth="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/Editor_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/new_album_relative"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/editor_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dip"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+
+                    android:tag="sticky"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/Editor_title"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/Editor_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/homecomponent_height"
+                    android:layout_below="@+id/editor_linear"
+                    android:divider="@color/black"
+                    tools:listitem="@layout/song_row_item"
+                    widget:dividerWidth="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/toprelative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Editor_relative"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/top_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dip"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:tag="sticky"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <ImageView
+                        android:id="@+id/top_arrow"
+                        android:layout_width="18dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginRight="10dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@mipmap/downarrow" />
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/Top_songs"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/homecomponent_height"
+                    android:layout_below="@id/top_linear"
+                    android:divider="@color/black"
+                    tools:listitem="@layout/song_row_item"
+                    widget:dividerWidth="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/rltoplist"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/top_linear"
+                    android:visibility="gone">
+
+                    <ListView
+                        android:id="@+id/lvtoptrack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:divider="@color/black"
+                        android:dividerHeight="1dp" />
+
+                    <RelativeLayout
+                        android:id="@+id/rltopmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_below="@id/lvtoptrack"
+android:background="@drawable/buttonorange_shape"
+                        android:layout_centerHorizontal="true">
+
+                        <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                            android:id="@+id/tvtopmore"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="@color/ghaneely_orange"
+                            android:textSize="14sp" />
+
+
+                        <com.binarywaves.ghaneely.ghannelystyles.CustomButton
+                            android:id="@+id/ivtopmore"
+                            android:layout_width="15dp"
+                            android:layout_height="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="10dp"                         android:layout_marginTop="2dp"
+                            android:layout_toRightOf="@id/tvtopmore"
+                            android:layout_toEndOf="@id/tvtopmore" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/under_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toprelative"
+                android:background="@color/black"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="gone"
+
+                android:paddingRight="10dip"
+                android:paddingEnd="10dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:tag="sticky"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/underground"
+                    android:textColor="@color/ghaneely_orange"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <com.meetme.android.horizontallistview.HorizontalListView
+                android:id="@+id/undergroundgridview"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/homecomponent_height"
+                android:layout_below="@+id/under_linear"
+                android:divider="@color/black"
+                android:rotationY="180"
+                android:visibility="gone"
+
+                widget:dividerWidth="10dp" />
+
+            <RelativeLayout
+                android:id="@+id/Artist_Radio_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/undergroundgridview"
+                android:gravity="right"
+
+                android:orientation="horizontal"
+                tools:ignore="RtlHardcoded">
+
+                <LinearLayout
+                    android:id="@+id/artist_radio_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dip"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+
+                    android:tag="sticky"
+                    tools:ignore="RtlSymmetry">
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/Friend_title"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <com.meetme.android.horizontallistview.HorizontalListView
+                    android:id="@+id/artist_radio_gallery"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/homecomponent_height"
+                    android:layout_below="@+id/artist_radio_linear"
+                    android:divider="@color/black"
+                    tools:listitem="@layout/moodsitems_list"
+                    android:rotationY="180"
+                    widget:dividerWidth="10dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/video_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Artist_Radio_relative"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/video_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="10dip"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:tag="sticky"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/video_title"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="20sp" />
+
+
+                </LinearLayout>
+
+                <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                    android:id="@+id/video_pager"
+                    android:layout_width="fill_parent"
+                    android:layout_height="230dp"
+                    android:layout_below="@id/video_linear"
+                    android:rotationY="180" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/international_Radio_relative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/video_relative"
+
+                android:background="@color/darkgray"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/international_radio_linear"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingRight="15dip"
+                    android:paddingEnd="15dp"
+                    android:paddingTop="30dp"
+                    android:paddingBottom="30dp"
+                    android:tag="sticky"
+                    tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                    <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:text="@string/inter_title"
+                        android:textColor="@color/ghaneely_orange"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/homecomponent_height"
+                    android:layout_below="@id/international_radio_linear"
+
+                    >
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_gravity="bottom"
+                        android:background="@mipmap/radiobackground">
+                    </RelativeLayout>
+
+
+                    <com.meetme.android.horizontallistview.HorizontalListView
+                        android:id="@+id/international_radio_gallery"
+                        android:layout_width="fill_parent"
+                        android:layout_height="@dimen/homecomponent_height"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:rotationY="180"
+                        android:divider="@color/darkgray"
+                        android:layout_alignParentLeft="true"
+                        tools:ignore="ObsoleteLayoutParam" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/dj_linear"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/international_Radio_relative"
+                android:gravity="right"
+
+                android:orientation="horizontal"
+                android:paddingRight="10dip"
+                android:paddingEnd="10dp"
+                android:paddingTop="30dp"
+                android:paddingBottom="30dp"
+                android:tag="sticky"
+                tools:ignore="RtlHardcoded,RtlSymmetry">
+
+                <com.binarywaves.ghaneely.ghannelystyles.CustomTextviewBold
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="@string/personal_dj"
+                    android:textColor="@color/ghaneely_orange"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/homecomponent_height"
+                android:layout_below="@+id/dj_linear"
+                android:divider="@color/black"
+                android:orientation="horizontal"
+                android:scrollbars="horizontal"
+
+                tools:listitem="@layout/custom_moodsitem"
+                />
+
+
+            <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                android:id="@+id/Gallery01"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/homecomponent_height"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+    </com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/progressbarwhell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="false"
+            android:indeterminate="true"
+            android:visibility="gone"
+            tools:ignore="ObsoleteLayoutParam" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/audioplayer"
+        layout="@layout/audioplayer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

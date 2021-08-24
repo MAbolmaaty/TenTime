@@ -1,0 +1,4 @@
+R_DEF: Internal format may change without notice
+local
+attr? dividerWidth
+styleable HorizontalListView dividerWidth android:divider android:requiresFadingEdge android:fadingEdgeLength

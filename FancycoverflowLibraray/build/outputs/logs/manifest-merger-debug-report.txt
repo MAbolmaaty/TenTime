@@ -1,0 +1,27 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:19:1-29:12
+INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:19:1-29:12
+INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:19:1-29:12
+	package
+		ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:21:5-46
+		INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml
+		INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:23:7-32
+	xmlns:android
+		ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:19:11-69
+	android:versionCode
+		ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:22:7-30
+application
+ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:26:5-28:19
+	android:label
+		ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml:26:18-50
+uses-sdk
+INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml
+INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml
+		ADDED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml
+		INJECTED from C:\MU\Ghaneely\FancycoverflowLibraray\AndroidManifest.xml

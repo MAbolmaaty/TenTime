@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/inbox_transparent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+
+        android:layout_marginStart="50dp"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:id="@+id/succesrl"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+
+            android:layout_centerHorizontal="true"
+            android:background="@color/ghaneely_orange">
+
+            <ImageView
+                android:id="@+id/btnIvClose"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:padding="33dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/xsubsc"
+                android:contentDescription="@string/close"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/ivsuc"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/app_name"
+                android:src="@mipmap/success" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/succesrl"
+            android:background="@color/white">
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextViewSemiBold
+                android:id="@+id/tvsuc_rej"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/playlisttextsize" />
+
+            <com.binarywaves.ghaneely.ghannelystyles.CustomTextView
+                android:id="@+id/tvdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvsuc_rej"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/grayText"
+                android:textSize="@dimen/albumtextsize" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
